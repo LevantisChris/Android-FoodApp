@@ -53,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewPopularList.setLayoutManager(linearLayoutManager);
 
         ArrayList<FoodDomain> foodList = new ArrayList<>();
-        foodList.add(new FoodDomain("Pepperoni pizza", "pizza1", "slices pepperoni, mozzararela cheese, freash oregano, ground black pepper, pizza sause", 9.76));
-        foodList.add(new FoodDomain("Cheese Burger", "burger", "beef, Gouda Cheesse, Special Sause, Letture, tomato", 8.79));
-        foodList.add(new FoodDomain("Vegetable Pizza", "pizza2", "olive oil, feta Kalamata, cherry tomato, fresh oregano", 10.99));
+        foodList.add(new FoodDomain("Pepperoni pizza", "pop_1", "slices pepperoni, mozzararela cheese, freash oregano, ground black pepper, pizza sause", 9.76));
+        foodList.add(new FoodDomain("Cheese Burger", "pop_2", "beef, Gouda Cheesse, Special Sause, Letture, tomato", 8.79));
+        foodList.add(new FoodDomain("Vegetable Pizza", "pop_3", "olive oil, feta Kalamata, cherry tomato, fresh oregano", 10.99));
 
         adapter2 = new PoplurarAdaptor(foodList);
         recyclerViewPopularList.setAdapter(adapter2);
