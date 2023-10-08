@@ -9,7 +9,7 @@
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -229,131 +229,131 @@
             app:fabCradleRoundedCornerRadius="50dp"
             app:fabCradleVerticalOffset="6dp"
             android:layout_gravity="bottom">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/HomeBtn"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="0.2"
-        android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/HomeBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/HomeImg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/home" />
+                    <ImageView
+                        android:id="@+id/HomeImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/home" />
 
-        <TextView
-            android:id="@+id/HomeText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Home"
-            android:textAlignment="center"
-            android:textColor="#676767"
-            android:textSize="12sp" />
-    </LinearLayout>
+                    <TextView
+                        android:id="@+id/HomeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp" />
+                </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/ProfileBtn"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="0.2"
-        android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/ProfileBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/ProfileImg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/profile_new" />
+                    <ImageView
+                        android:id="@+id/ProfileImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/profile_new" />
 
-        <TextView
-            android:id="@+id/ProfileText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Profile"
-            android:textAlignment="center"
-            android:textColor="#676767"
-            android:textSize="12sp" />
-    </LinearLayout>
+                    <TextView
+                        android:id="@+id/ProfileText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp" />
+                </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/InvisibleBtn"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="0.2"
-        android:orientation="vertical"
-        android:visibility="invisible">
+                <LinearLayout
+                    android:id="@+id/InvisibleBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
 
-        <ImageView
-            android:id="@+id/InvisibleImg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/btn1" />
+                    <ImageView
+                        android:id="@+id/InvisibleImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/btn1" />
 
-        <TextView
-            android:id="@+id/InvisibleText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Home"
-            android:textAlignment="center"
-            android:textColor="#676767"
-            android:textSize="12sp" />
-    </LinearLayout>
+                    <TextView
+                        android:id="@+id/InvisibleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp" />
+                </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/SupportBtn"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="0.2"
-        android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/SupportBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/SupportImg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/btn3" />
+                    <ImageView
+                        android:id="@+id/SupportImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/btn3" />
 
-        <TextView
-            android:id="@+id/SupportText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Support"
-            android:textAlignment="center"
-            android:textColor="#676767"
-            android:textSize="12sp" />
-    </LinearLayout>
+                    <TextView
+                        android:id="@+id/SupportText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Support"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp" />
+                </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/SettingsBtn"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="0.2"
-        android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/SettingsBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/SettingsImg"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/btn4" />
+                    <ImageView
+                        android:id="@+id/SettingsImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/btn4" />
 
-        <TextView
-            android:id="@+id/SettingsText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Settings"
-            android:textAlignment="center"
-            android:textColor="#676767"
-            android:textSize="12sp" />
-    </LinearLayout>
-</LinearLayout>
+                    <TextView
+                        android:id="@+id/SettingsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Settings"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
         </com.google.android.material.bottomappbar.BottomAppBar>
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
