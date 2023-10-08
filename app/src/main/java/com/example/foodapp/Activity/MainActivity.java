@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void recyclerViewCategory() {
-        /*LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerViewCategoryList = findViewById(R.id.recyclerView);
         recyclerViewCategoryList.setLayoutManager(linearLayoutManager);
 
@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(new CategoryDomain("Burger", "cat_2"));
         arrayList.add(new CategoryDomain("HotDog", "cat_3"));
         arrayList.add(new CategoryDomain("Drink", "cat_4"));
-        arrayList.add(new CategoryDomain("Donut", "cat_5"));*/
+        arrayList.add(new CategoryDomain("Donut", "cat_5"));
 
-        //adapter = new CategoryAdaptor(arrayList);
-        //recyclerViewCategoryList.setAdapter(adapter);
+        adapter = new CategoryAdaptor(arrayList);
+        recyclerViewCategoryList.setAdapter(adapter);
     }
 }
