@@ -9,7 +9,11 @@
     <ScrollView
         android:id="@+id/ScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,7 +45,7 @@
                 tools:layout_marginBottom="4dp">
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/itemsTotalDescrText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -70,7 +74,7 @@
                 tools:layout_marginBottom="4dp">
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/deliveyServicesDescrText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -80,7 +84,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/taxText"
+                    android:id="@+id/deliveryText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="€0"
@@ -99,7 +103,7 @@
                 tools:layout_marginBottom="4dp">
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/taxDescrText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -109,7 +113,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/totalText"
+                    android:id="@+id/taxText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="€0"
@@ -128,7 +132,7 @@
                 tools:layout_marginBottom="4dp">
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/totalDescrText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -148,6 +152,16 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/emptyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your cart is empty"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:textAlignment="center"
+                tools:textStyle="bold" />
+
+            <TextView
                 android:id="@+id/textView15"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -163,6 +177,7 @@
     </ScrollView>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout2"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="@id/ScrollView"
