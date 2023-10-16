@@ -14,7 +14,6 @@
         android:id="@+id/picCart"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@tools:sample/avatars"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -37,13 +36,12 @@
         android:id="@+id/minusCartBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@tools:sample/avatars"
         app:layout_constraintBottom_toBottomOf="@+id/picCart"
         app:layout_constraintStart_toStartOf="@+id/titleText"
         tools:srcCompat="@drawable/minus" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/numberItemText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -60,8 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:src="@tools:sample/avatars"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toEndOf="@+id/numberItemText"
         tools:layout_editor_absoluteY="71dp"
         tools:srcCompat="@drawable/plus" />
 

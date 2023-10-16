@@ -216,6 +216,7 @@
                     android:paddingStart="32dp"
                     android:paddingEnd="32dp"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -367,16 +368,16 @@
         </com.google.android.material.bottomappbar.BottomAppBar>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/cartBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#ff5e00"
             android:elevation="3dp"
             android:src="@drawable/shopping_cart"
+            android:tint="#ffffff"
             app:backgroundTint="#ff5e00"
             app:layout_anchor="@+id/app_bar"
-            app:maxImageSize="30dp"
-            android:tint="#ffffff">
-        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+            app:maxImageSize="30dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
