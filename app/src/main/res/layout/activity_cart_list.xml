@@ -12,13 +12,16 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="60dp">
 
             <TextView
                 android:id="@+id/textView9"
@@ -153,16 +156,6 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/emptyText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Your cart is empty"
-                android:textSize="16sp"
-                android:visibility="gone"
-                tools:textAlignment="center"
-                tools:textStyle="bold" />
-
-            <TextView
                 android:id="@+id/textView15"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -176,6 +169,18 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your cart is empty"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/coordinatorLayout2"
@@ -248,31 +253,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/InvisibleBtn"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.2"
-                    android:orientation="vertical"
-                    android:visibility="invisible">
-
-                    <ImageView
-                        android:id="@+id/InvisibleImg"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/btn1" />
-
-                    <TextView
-                        android:id="@+id/InvisibleText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Home"
-                        android:textAlignment="center"
-                        android:textColor="#676767"
-                        android:textSize="12sp" />
-                </LinearLayout>
-
-                <LinearLayout
                     android:id="@+id/SupportBtn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -330,9 +310,11 @@
             android:elevation="3dp"
             android:src="@drawable/shopping_cart"
             android:tint="#ffffff"
+            android:visibility="invisible"
             app:backgroundTint="#ff5e00"
             app:layout_anchor="@+id/app_bar"
-            app:maxImageSize="30dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+            app:maxImageSize="30dp">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -74,7 +74,7 @@ public class CartListActivity extends AppCompatActivity {
         adapter = new CartListAdapter( managmentCart.getListCart(), this,  new ChangeNumberItemsListener() {
             @Override
             public void changed() {
-
+                calculateCart();
             }
         });
 
@@ -92,9 +92,9 @@ public class CartListActivity extends AppCompatActivity {
         double percentTax = 0.24;
         double delivery = 10;
 
-        tax = Math.round((managmentCart.getTotalFee() * percentTax) * 100) / 100;
-        double total = Math.round((managmentCart.getTotalFee() + tax + delivery)* 100) * 100;
-        double itemTotal = Math.round(managmentCart.getTotalFee() * 100) / 100;
+        tax = Math.round((managmentCart.getTotalFee() * percentTax));
+        double total = Math.round((managmentCart.getTotalFee() + tax + delivery));
+        double itemTotal = Math.round(managmentCart.getTotalFee() * 100);
 
         totalFeeText.setText("€" + itemTotal);
         taxText.setText("€" + tax);

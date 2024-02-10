@@ -77,14 +77,6 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHo
         });
     }
 
-    /*
-    @Override
-    public void onBindViewHolder(@NonNull CartListAdapter.ViewHolder holder, int position) {
-        holder.title.setText(foodDomainArrayList.get(position).getTitle());
-        holder.feeEach
-    }
-    */
-
     @Override
     public int getItemCount() {
         return foodDomainArrayList.size();

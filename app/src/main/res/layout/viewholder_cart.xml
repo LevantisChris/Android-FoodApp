@@ -8,7 +8,8 @@
     android:layout_marginTop="16dp"
     android:layout_marginEnd="10dp"
     android:layout_marginBottom="10dp"
-    android:elevation="3dp">
+    android:background="@drawable/fade_background"
+    android:padding="20dp">
 
     <ImageView
         android:id="@+id/picCart"
@@ -38,7 +39,18 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/picCart"
         app:layout_constraintStart_toStartOf="@+id/titleText"
-        tools:srcCompat="@drawable/minus" />
+        app:srcCompat="@drawable/minus" />
+
+    <ImageView
+        android:id="@+id/plusCartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/minusCartBtn"
+        app:layout_constraintStart_toStartOf="@+id/titleText"
+        app:layout_constraintTop_toTopOf="@+id/minusCartBtn"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/plus" />
 
     <TextView
         android:id="@+id/numberItemText"
@@ -53,32 +65,23 @@
         app:layout_constraintTop_toTopOf="@+id/minusCartBtn"
         app:layout_constraintVertical_bias="1.0" />
 
-    <ImageView
-        android:id="@+id/plusCartBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        app:layout_constraintStart_toEndOf="@+id/numberItemText"
-        tools:layout_editor_absoluteY="71dp"
-        tools:srcCompat="@drawable/plus" />
-
     <TextView
         android:id="@+id/feeEachItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="24dp"
         android:text="0"
         android:textColor="#373b54"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/titleText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/titleText" />
+        app:layout_constraintTop_toTopOf="@+id/titleText"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
         android:text="$"
         android:textColor="#ff3d00"
         app:layout_constraintBottom_toBottomOf="@+id/feeEachItem"
@@ -95,7 +98,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/plusCartBtn"
         app:layout_constraintEnd_toEndOf="@+id/feeEachItem"
-        app:layout_constraintTop_toTopOf="@+id/plusCartBtn" />
+        app:layout_constraintTop_toTopOf="@+id/plusCartBtn"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView20"
